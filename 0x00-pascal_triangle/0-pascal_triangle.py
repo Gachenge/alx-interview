@@ -3,6 +3,7 @@
 technical interview questions to improve my ability to problem solve
 """
 
+
 def pascal_triangle(n):
     if n <= 0:
         return []
