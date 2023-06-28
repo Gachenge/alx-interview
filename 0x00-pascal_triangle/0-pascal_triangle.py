@@ -5,6 +5,7 @@ technical interview questions to improve my ability to problem solve
 
 
 def pascal_triangle(n):
+    """makes a list of lists that represents pascals triangle"""
     if n <= 0:
         return []
     arr = [[] for i in range(n)]
