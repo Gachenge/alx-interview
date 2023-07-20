@@ -1,8 +1,14 @@
 #!/usr/bin/python3
-"""script that reads stdin line by line and computes metrics"""
-import sys
-"""show total file size, each status code and how many times it is incurred"""
+"""
+script that reads stdin line by line and computes metrics
+Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1"
+<status code> <file size> (if the format is not this one,
+the line must be skipped)
+"""
 
+import sys
+
+"""show total file size, each status code and how many times it is incurred"""
 total_size = 0
 status_codes = {'200': 0, '301': 0, '400': 0, '401': 0,
                 '403': 0, '404': 0, '405': 0, '500': 0}
