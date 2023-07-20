@@ -34,10 +34,6 @@ except Exception as e:
     pass
 
 finally:
-    if code in status_codes:
-        for key, value in sorted(status_codes.items()):
-            if key == code:
-                value += 1
     print(f"File size: {total_size}")
     for key, value in sorted(status_codes.items()):
         if value != 0:
