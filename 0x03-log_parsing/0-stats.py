@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """script that reads stdin line by line and computes metrics"""
 import sys
+"""show total file size, each status code and how many times it is incurred"""
 
 total_size = 0
 status_codes = {'200': 0, '301': 0, '400': 0, '401': 0,
