@@ -10,7 +10,7 @@ def validUTF8(data):
     """determine if the data is valid encoded"""
     try:
         data = bytes(data)
-        dec = data.decode('utf-8')
+        data.decode('utf-8')
         return True
     except Exception as e:
         return False
