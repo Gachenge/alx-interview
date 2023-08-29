@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""each side of the square is 1 unit long"""
+
 def island_perimeter(grid):
     """
     get the perimeter of an island. assume there are no holes
@@ -8,8 +10,6 @@ def island_perimeter(grid):
         return 0
     row, col = len(grid), len(grid[0])
     perim = 0
-
-    assert(1 <= row and col <= 100)
 
     for i in range(row):
         for j in range(col):
