@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def island_perimeter(grid):
+    """get the perimeter of an island. assume there are no holes"""
     if not grid:
         return 0
     M, N = len(grid), len(grid[0])
